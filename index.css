@@ -259,3 +259,19 @@ input[type=number]{
 .result-questions-question-choice-incorrect{
     --color: #800;
 }
+
+
+
+
+.results-download{
+    margin: 30px auto;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #eee;
+    cursor: pointer;
+    font-family: "Coldstyle";
+}

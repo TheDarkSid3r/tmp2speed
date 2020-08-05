@@ -108,11 +108,16 @@ $(function(){
             $(".results-content").append(wrapper);
         });
         $(".results-wrapper").css({width: 1200});
-        $(".result-extra-button,.result-questions-wrapper").hide();
+        $(".result-extra-button,.result-questions-wrapper,.results-download").hide();
         html2canvas($(".results-wrapper")[0]).then(canvas => {
             $(".results-wrapper").css({width: "100%"});
-            $(".result-extra-button").show();
-            window.open(canvas.toDataURL("png"));
+            $(".result-extra-button,.results-download").show();
+            $(".results-download")[0].onclick = function(){
+                var link = $("<a/>").attr({download: "results.png", href: canvas.toDataURL("png")});
+                $(document.body).append(link);
+                link[0].click();
+                link.remove();
+            };
         });
     };
 
