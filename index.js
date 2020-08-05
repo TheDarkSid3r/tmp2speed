@@ -158,6 +158,27 @@ $(function(){
                 var incorrectQuestions = answeredQuestions.filter(q => !q.answeredCorrectly);
                 var correctPS = correctQuestions.length/timerTime;
                 var totalPS = answeredQuestions.length/timerTime;
+
+                var percent = Math.round(correctQuestions.length/answeredQuestions.length*100);
+                var letterGrades = [
+                    {min: 0, max: 59, letter: "F"},
+                    {min: 60, max: 62, letter: "D-"},
+                    {min: 63, max: 66, letter: "D"},
+                    {min: 67, max: 69, letter: "D+"},
+                    {min: 70, max: 72, letter: "C-"},
+                    {min: 73, max: 76, letter: "C"},
+                    {min: 77, max: 79, letter: "C+"},
+                    {min: 80, max: 82, letter: "B-"},
+                    {min: 83, max: 86, letter: "B"},
+                    {min: 87, max: 89, letter: "B+"},
+                    {min: 90, max: 92, letter: "A-"},
+                    {min: 93, max: 96, letter: "A"},
+                    {min: 97, max: 100, letter: "A+"},
+                ];
+                var letterGrade = "--";
+                letterGrades.forEach(function(gd){
+                    if (percent >= gd.min && percent <= gd.max) letterGrade = gd.letter;
+                });
                 var resultData = [
                     {
                         title: "Type",
@@ -202,7 +223,12 @@ $(function(){
                     {
                         title: "Accuracy",
                         type: "text",
-                        value: Math.round(correctQuestions.length/answeredQuestions.length*100)+"%"
+                        value: percent+"%"
+                    },
+                    {
+                        title: "Grade",
+                        type: "text",
+                        value: letterGrade
                     }
                 ];
                 if (answeredQuestions.length > 0) resultData.push({
