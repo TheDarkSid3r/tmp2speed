@@ -1,0 +1,30 @@
+@font-face{
+    src: url(1_ColdstyleItalic_Coldstyle\ Italic.ttf);
+    font-family: "Coldstyle";
+    font-style: italic;
+}
+@font-face{
+    src: url(2_LostItalic_Lost...\ slant.ttf);
+    font-family: "Lost";
+    font-style: italic;
+}
+@font-face{
+    src: url(3_GeneralStoreShadow_LHF\ General\ Store\ Shadow.ttf);
+    font-family: "going to the general store";
+    font-style: normal;
+}
+@font-face{
+    src: url(4_TMP2Neon_TMP2Neon.ttf);
+    font-family: "TMP2Neon";
+    font-style: normal;
+}
+@font-face{
+    src: url(6_ColdstyleRegular_Coldstyle.ttf);
+    font-family: "Coldstyle";
+    font-style: normal;
+}
+@font-face{
+    src: url(7_LostRegular_Lost....ttf);
+    font-family: "Lost";
+    font-style: normal;
+}

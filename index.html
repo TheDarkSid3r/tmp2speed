@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math & Rules Speed Tester</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="starting-wrapper">
+        <div class="results-wrapper">
+            <div class="results-title">Results</div>
+            <div class="results-content"></div>
+        </div>
+
+        <div class="title">Math & Rules Speed Tester</div>
+        <div class="subtitle">Check how fast you are at the Math and Rules minigames from Trivia Murder Party 2!</div>
+        <div class="subtitle">You'll have 30 seconds to answer as many questions as possible.</div>
+
+        <form class="start-form">
+            <div class="form-group">
+                <label class="form-label">Type</label>
+                <input type="radio" id="prompt-type-math" name="prompt-type" value="math" checked />
+                <label class="form-sublabel" for="prompt-type-math">Math</label>
+                <br/>
+                <input type="radio" id="prompt-type-rules" name="prompt-type" value="rules" />
+                <label class="form-sublabel" for="prompt-type-rules">Rules</label>
+                <br/>
+                <input type="radio" id="prompt-type-both" name="prompt-type" value="both" />
+                <label class="form-sublabel" for="prompt-type-both">Both</label>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Number of Choices</label>
+                <input type="number" name="choices" value="4" min="1" max="100" />
+                <br/>
+                <input type="checkbox" name="increase" id="increase" />&nbsp;<label class="form-sublabel" for="increase">Increase number of choices every question</label>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Time Limit (seconds)</label>
+                <input type="number" name="time" value="30" min="1" max="600" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Other</label>
+                <input type="checkbox" name="hat" id="hat" />&nbsp;<label class="form-sublabel" for="hat">Dad Hat? (Math only)</label>
+                <!-- <input type="checkbox" name="opposite" id="opposite" />&nbsp;<label class="form-sublabel" for="opposite">It's opposite day!</label> -->
+            </div>
+            <div class="form-group">
+                <button type="submit" class="start-button">Start</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="game-wrapper">
+        <div class="game-countdown">3</div>
+        <div class="game-content">
+            <div class="game-prompt"></div>
+            <div class="game-choices"></div>
+        </div>
+        <div class="game-timer">30</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="prompts.js"></script>
+    <script src="html2canvas.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

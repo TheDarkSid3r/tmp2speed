@@ -1,0 +1,30 @@
+{
+    "ordinal":{
+        "ones":["zeroth","first","second","third","fourth","fifth","sixth","seventh","eighth","ninth"],
+        "onesSingle":["one","two","three","four","five","six","seven","eight","nine"],
+        "teens":["eleventh","twelfth","thirteenth","fourteenth","fifteenth","sixteenth","seventeenth","eighteenth","nineteenth"],
+        "tens":["tenth","twentieth","thirtieth","fortieth","fiftieth","sixtieth","seventieth","eightieth","ninetieth"],
+        "tensSingle":["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"],
+        "other":["th","st","nd","rd","th","th","th","th","th","th"],
+        "hundred":"hundred",
+        "hundredth":"th",
+        "joiner":" and "
+    },
+    "tapthe":"Tap the",
+    "donttapthe":"Don't tap the",
+    "tapan":"Tap an",
+    "donttapan":"Don't tap an",
+    "letter":"Tap a word with the letter",
+    "dontletter":"Don't tap a word with the letter",
+    "even":"even",
+    "odd":"odd",
+    "longest":"longest",
+    "shortest":"shortest",
+    "largest":"largest",
+    "smallest":"smallest",
+    "buttonend":"button.",
+    "numberend":"number",
+    "wordend":"word",
+    "button":"Button",
+    "frozen":"You are frozen!"
+}

@@ -1,0 +1,261 @@
+@import url(fonts/fonts.css);
+body{
+    color: #000;
+    margin: 0px;
+    font-family: "Lost";
+}
+.swal2-title{
+    font-size: 40px !important;
+}
+.swal2-popup{
+    font-family: "Coldstyle" !important;
+}
+*{
+    line-height: 100%;
+}
+
+.starting-wrapper{
+    width: 100%;
+    max-width: 700px;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+}
+.title{
+    font-family: "Coldstyle";
+    font-size: 50px;
+    text-align: left;
+}
+.subtitle{
+    font-family: "Lost";
+    font-size: 30px;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.start-form{
+    margin-top: 80px;
+}
+.form-group{
+    width: 45%;
+    min-width: 200px;
+    max-width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.form-label{
+    font-size: 30px;
+    font-family: "Coldstyle";
+    display: block;
+    margin-bottom: 10px;
+}
+.form-sublabel{
+    font-size: 25px;
+}
+
+input[type=number]{
+    font-size: 30px;
+    width: 100%;
+    max-width: 120px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-family: "Coldstyle";
+}
+
+.start-button{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Coldstyle";
+    border: 1px solid #000;
+    background-color: #eee;
+}
+
+
+.game-wrapper{
+    width: 100%;
+    background-color: #1E3755;
+    min-height: 100vh;
+    display: none;
+}
+.game-content{
+    width: 100%;
+    max-width: 700px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+.game-countdown{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 300px;
+    font-family: "TMP2Neon";
+    --shadow: 0px 0px 10px #80771C;
+    text-shadow: var(--shadow), var(--shadow);
+    display: none;
+}
+
+.game-prompt{
+    font-family: "Lost";
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    color: #1E3755;
+    box-sizing: border-box;
+    padding: 5px;
+    line-height: 1.2em;
+}
+.game-choices{
+    padding: 5px 15px;
+}
+.choice-group{
+    margin: 5px auto;
+    display: inline-flex;
+    width: 100%;
+}
+.choice-button{
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    line-height: 1.3333333;
+    overflow: hidden;
+    min-width: 50px;
+    width: 100%;
+    outline: none;
+    position: relative;
+    white-space: normal;
+    display: block;
+    font-size: 32px;
+    background-color: #000;
+    margin: 5px;
+    color: #639BE1;
+    font-family: "Lost";
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 15px;
+}
+.choice-button:active{
+    background-color: #fff;
+    color: #000;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+
+.game-timer{
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    color: #fff;
+    font-family: "Coldstyle";
+    font-size: 80px;
+    display: none;
+    pointer-events: none;
+}
+
+
+
+
+
+.results-wrapper{
+    margin-bottom: 200px;
+    display: none;
+    background-color: #fff;
+}
+.results-title{
+    font-size: 70px;
+    font-family: "Coldstyle";
+}
+.results-content{
+    margin-top: 30px;
+}
+
+.result-wrapper{
+    display: inline-block;
+    width: 45%;
+    min-width: 200px;
+    border: 1px solid #000;
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    vertical-align: top;
+}
+.result-wrapper-wide{
+    width: 80%;
+}
+.result-title{
+    font-family: "Lost";
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.result-text{
+    font-size: 50px;
+    font-family: "Coldstyle";
+}
+
+.result-extra-button{
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #eee;
+    cursor: pointer;
+    font-family: "Coldstyle";
+}
+
+.result-questions-wrapper{
+    margin-top: 30px;
+    display: none;
+}
+.result-questions-question{
+    width: 46%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.result-questions-question-prompt{
+    font-size: 22px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.result-questions-question-choices{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.result-questions-question-choice{
+    width: 200px;
+    max-width: 100%;
+    margin: 2px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.result-questions-question-choice-picked{
+    background-color: var(--color);
+}
+.result-questions-question-choice-correct{
+    --color: #080;
+}
+.result-questions-question-choice-incorrect{
+    --color: #800;
+}
